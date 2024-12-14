@@ -2,8 +2,8 @@ from . import animal
 
 class Mamifero(animal.Animal):
     _listado = []
-    _caballos = 0
-    _leones = 0
+    caballos = 0
+    leones = 0
 
     def __init__(self, nombre, edad, habitat, genero, pelaje, patas) -> None:
         super().__init__(nombre, edad, habitat, genero)
@@ -17,21 +17,21 @@ class Mamifero(animal.Animal):
 
     @classmethod
     def crearCaballo(cls,nombre,edad,genero):
-        cls._caballos+=1
+        cls.caballos+=1
         return Mamifero(nombre,edad,"pradera",genero,True,4)
     
     @classmethod
     def crearLeon(cls,nombre,edad,genero):
-        cls._leones+=1
+        cls.leones+=1
         return Mamifero(nombre,edad,"selva",genero,True,4)
     
     @classmethod
     def getCaballos(cls):
-        return cls._caballos
+        return cls.caballos
     
     @classmethod
     def getLeones(cls):
-        return cls._leones
+        return cls.leones
     
     @classmethod
     def getListado(cls):

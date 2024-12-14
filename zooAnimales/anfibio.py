@@ -2,8 +2,8 @@ from . import animal
 
 class Anfibio(animal.Animal):
     _listado = []
-    _ranas=0
-    _salamandras =0 
+    ranas=0
+    salamandras =0 
 
     def __init__(self, nombre, edad, habitat, genero, colorPiel, venenoso) -> None:
         super().__init__(nombre, edad, habitat, genero)
@@ -20,18 +20,18 @@ class Anfibio(animal.Animal):
     
     @classmethod
     def crearRana(cls,nombre,edad,genero):
-        cls._ranas+=1
+        cls.ranas+=1
         return Anfibio(nombre,edad,"selva",genero,"rojo",True)
     
     @classmethod
     def crearSalamandra(cls, nombre, edad, genero):
-        cls._salamandras+=1
+        cls.salamandras+=1
         return Anfibio(nombre,edad,"selva",genero,"negro y amarillo",False)
 
     @classmethod
     def getRanas(cls):
-        return cls._ranas
+        return cls.ranas
 
     @classmethod
     def getSalamandras(cls):
-        return cls._salamandras
+        return cls.salamandras
