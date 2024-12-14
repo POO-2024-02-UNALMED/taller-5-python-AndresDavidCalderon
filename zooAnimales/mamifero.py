@@ -37,7 +37,7 @@ class Mamifero(animal.Animal):
     def getListado(cls):
         return cls._listado
 
-    def getPelaje(self):
+    def isPelaje(self):
         return self._pelaje
     
     def getPatas(self):
