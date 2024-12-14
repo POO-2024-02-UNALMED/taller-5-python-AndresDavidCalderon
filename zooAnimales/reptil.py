@@ -1,6 +1,6 @@
-from animal import Animal;
+from . import animal
 
-class Reptil(Animal):
+class Reptil(animal.Animal):
     _listado = []
     _iguanas = 0
     _serpientes = 0
@@ -27,4 +27,3 @@ class Reptil(Animal):
     def crearSerpiente(cls,nombre,edad,genero):
         cls._serpientes+=1
         return Reptil(nombre,edad,"jungla",genero,"blanco",1)
-    

@@ -1,6 +1,6 @@
-from animal import Animal
+from . import animal
 
-class Pez(Animal):
+class Pez(animal.Animal):
     _listado = []
     _salmones = 0
     _bacalaos = 0
@@ -27,3 +27,11 @@ class Pez(Animal):
     def crearBacalao(cls,nombre,edad,genero):
         cls._bacalaos+=1
         return Pez(nombre,edad,"oceano",genero,"gris",6)
+    
+    @classmethod
+    def getSalmones(cls):
+        return cls._salmones
+
+    @classmethod
+    def getBacalaos(cls):
+        return cls._bacalaos
