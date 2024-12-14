@@ -19,7 +19,7 @@ class Animal:
         from . import reptil
         from . import pez
         from . import anfibio
-        return f"Mamiferos: {mamifero.Mamifero.cantidadMamiferos()}\nAves: {ave.Ave.cantidadAves()}\nReptiles: {reptil.Reptil.cantidadReptiles()}\nPeces: {pez.Pez.cantidadPeces()}\nAnfibios: {anfibio.Anfibio.cantidadAnfibios()}"
+        return f"Mamiferos : {mamifero.Mamifero.cantidadMamiferos()}\nAves : {ave.Ave.cantidadAves()}\nReptiles : {reptil.Reptil.cantidadReptiles()}\nPeces : {pez.Pez.cantidadPeces()}\nAnfibios : {anfibio.Anfibio.cantidadAnfibios()}"
 
     @classmethod
     def cantidadTotalAnimales(cls):
