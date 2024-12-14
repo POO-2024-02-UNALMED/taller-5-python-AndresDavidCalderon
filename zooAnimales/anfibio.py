@@ -35,3 +35,16 @@ class Anfibio(animal.Animal):
     @classmethod
     def getSalamandras(cls):
         return cls.salamandras
+    
+    def getColorPiel(self):
+        return self._colorPiel
+
+    def isVenenoso(self):
+        return self._venenoso
+
+    def setColorPiel(self,colorPiel):
+        self._colorPiel=colorPiel
+    
+    def setVenenoso(self,venenoso):
+        self._venenoso=venenoso
+    

@@ -34,3 +34,9 @@ class Ave(animal.Animal):
     @classmethod
     def getAguilas(cls):
         return cls.aguilas
+
+    def getColorPlumas(self):
+        return self._colorPlumas
+
+    def setColorPlumas(self,colorPlumas):
+        self._colorPlumas=colorPlumas

@@ -35,3 +35,14 @@ class Pez(animal.Animal):
     @classmethod
     def getBacalaos(cls):
         return cls.bacalaos
+    
+    def getColorEscamas(self):
+        return self._colorEscamas
+    def getCantidadAletas(self):
+        return self._cantidadAletas
+
+    def setColorEscamas(self,colorEscamas):
+        self._colorEscamas=colorEscamas
+    
+    def setCantidadAletas(self,cantidadAletas):
+        self._cantidadAletas=cantidadAletas
